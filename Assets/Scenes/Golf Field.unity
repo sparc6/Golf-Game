@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 7.337657, y: 80.882, z: -106.50364}
-  smoothSpeed: 5
+  smoothSpeed: 20
 --- !u!114 &733920997
 MonoBehaviour:
   m_ObjectHideFlags: 0

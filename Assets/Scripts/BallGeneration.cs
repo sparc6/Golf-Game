@@ -25,11 +25,11 @@ public class BallGeneration : MonoBehaviour
 
     bool SpawnBall()
     {
-        // getting the terrain height and width
+        
         float terrainWidth = terrain.terrainData.size.x;
         float terrainLength = terrain.terrainData.size.z;
 
-        // 
+        
         float posX = Random.Range(-(terrainWidth) / 2, (terrainWidth) / 2);
         float posZ = Random.Range(-(terrainLength) / 2, (terrainLength) / 2);
 

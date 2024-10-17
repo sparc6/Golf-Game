@@ -23,7 +23,6 @@ public class GameSettings : MonoBehaviour
     float timer = 0;
     
 
-    // Update is called once per frame
     void Start()
     {
         ballGeneration = FindObjectOfType<BallGeneration>();
@@ -75,8 +74,8 @@ public class GameSettings : MonoBehaviour
 
     private IEnumerator DelayedMethod()
     {
-        yield return new WaitForSeconds(2); // Wait for 3 seconds
-        ExecuteAfterDelay(); // Call the method after the delay
+        yield return new WaitForSeconds(2); 
+        ExecuteAfterDelay(); 
     }
 
     private void ExecuteAfterDelay()
