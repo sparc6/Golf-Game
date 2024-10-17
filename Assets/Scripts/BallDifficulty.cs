@@ -11,7 +11,9 @@ public class BallDifficulty : MonoBehaviour
     public static GameObject[] balls;
     public static Dictionary<GameObject, int> ballScores = new Dictionary<GameObject, int>();
 
-    void Start()
+
+
+    public void BallDifficultySetStart()
     {
         balls = GameObject.FindGameObjectsWithTag("Ball");
         foreach (GameObject ball in balls)

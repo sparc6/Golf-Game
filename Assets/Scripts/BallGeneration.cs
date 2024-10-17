@@ -9,8 +9,9 @@ public class BallGeneration : MonoBehaviour
     public int ballCount = 10;
     public float treeCheckRadius = 2f;
     public GameObject [] waterPonds;
-    private void Awake()
-  
+
+
+    public void BallSpawner()
     {
         int spawnedBalls = 0;
         while (spawnedBalls < ballCount)

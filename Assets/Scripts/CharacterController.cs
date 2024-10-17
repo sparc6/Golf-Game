@@ -15,11 +15,13 @@ public class CharacterController : MonoBehaviour
     public Text scoreText;
 
     public int score = 0;
+    public Text finalScore;
+    public Text quitPanelScore;
 
     public bool walking;
     public bool collected = false;
 
-    public float lowHealthThreshold = 30f;
+    public float lowHealthThreshold = 50f;
     public float ballReachThreshold = 3f;
     public float distanceToBase;
     private void Start()
@@ -27,7 +29,9 @@ public class CharacterController : MonoBehaviour
         UpdateScoreUI(); // Initialize score display
     }
 
-    private void Update()
+
+
+    public void BallCollectionStart()
     {
         Rigidbody rigidbody = agent.GetComponent<Rigidbody>();
         Animator animator = agent.GetComponent<Animator>();
@@ -118,5 +122,7 @@ public class CharacterController : MonoBehaviour
     private void UpdateScoreUI()
     {
         scoreText.text = score.ToString("F0"); // Update the score text in the UI
+        finalScore.text = scoreText.text;
+        quitPanelScore.text = scoreText.text;
     }
 }

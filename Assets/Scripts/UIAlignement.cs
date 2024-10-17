@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIAlignment : MonoBehaviour
+public class UIAlignement : MonoBehaviour
 {
     private Transform cam;
     private GameObject healthBar;
@@ -12,14 +12,13 @@ public class UIAlignment : MonoBehaviour
     {
         cam = Camera.main.transform;
         healthBar = GameObject.FindGameObjectWithTag("HealthBar");
-        offset = cam.transform.position - healthBar.transform.position;
     }
 
     void Update()
     {
         healthBar.transform.LookAt(healthBar.transform.position + cam.forward); // Aligns the UI forward
     }
-    void LateUpdate()
+    public void CameraSettings()
     {
         Vector3 desiredPosition = healthBar.transform.position + offset; // Desired position
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed); // Smooth movement
