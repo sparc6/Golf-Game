@@ -68,9 +68,9 @@ public class BallGeneration : MonoBehaviour
         {
             float minXvalue = (waterPonds[i].transform.localScale.x) / 2 - waterPonds[i].transform.position.x;
             float maxXvalue = (waterPonds[i].transform.localScale.x) / 2 + waterPonds[i].transform.position.x;
-            float minYvalue = (waterPonds[i].transform.localScale.y) / 2 - waterPonds[i].transform.position.y;
-            float maxYvalue = (waterPonds[i].transform.localScale.y) / 2 + waterPonds[i].transform.position.y;
-            if(position.x > minXvalue && position.x<maxXvalue && position.y > minYvalue && position.y < maxYvalue)
+            float minZvalue = (waterPonds[i].transform.localScale.z) / 2 - waterPonds[i].transform.position.z;
+            float maxZvalue = (waterPonds[i].transform.localScale.z) / 2 + waterPonds[i].transform.position.z;
+            if(position.x > minXvalue && position.x<maxXvalue && position.z > minZvalue && position.z < maxZvalue)
             {
                 return true;
             }
