@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GolfCart
   - Ball
+  - HealthBar
   layers:
   - Default
   - TransparentFX
